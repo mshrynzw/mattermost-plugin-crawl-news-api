@@ -1,6 +1,6 @@
 # How to
 ```
-cd /opt/api_important_words_extraction/app/
+cd /opt/mattermost-plugin-crawl-news-api/app/
 python main.py --reload
 ```
 ```
