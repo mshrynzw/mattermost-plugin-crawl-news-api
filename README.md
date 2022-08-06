@@ -4,13 +4,13 @@ cd /opt/mattermost-plugin-crawl-news-api/app/
 python main.py --reload
 ```
 ```
-vi /etc/systemd/system/api_important_words_extraction.service
+vi /etc/systemd/system/mattermost-plugin-crawl-news-api.service
 ################################################################
 [Unit]
 Description = api_important_words_extraction
 [Service]
-WorkingDirectory = /opt/api_important_words_extraction/app
-ExecStart = /bin/python3.8 /opt/api_important_words_extraction/app/mai
+WorkingDirectory = /opt/mattermost-plugin-crawl-news-api/app
+ExecStart = /bin/python3.8 /opt/mattermost-plugin-crawl-news-api/app/mai
 Restart = always
 Type = simple
 User=root
